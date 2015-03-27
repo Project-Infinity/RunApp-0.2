@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+
+    <!--Quick Menu-->
+    <LinearLayout
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <!--Nav Home-->
+        <RelativeLayout
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width = "match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/groups_icon"
+                />
+
+        </RelativeLayout>
+
+        <!--Workouts-->
+        <RelativeLayout
+            android:id="@+id/workouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:background="@color/piGreen"
+                android:layout_width = "match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/groups_icon"
+                />
+
+        </RelativeLayout>
+
+        <!--Groups-->
+        <RelativeLayout
+            android:id="@+id/groups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="goGroups">
+
+            <View
+                android:layout_width = "match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/groups_icon"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Workouts"
+        android:id="@+id/heading"
+        android:textColor="@color/piGreen"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/workoutList"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/add"
+            android:layout_margin="10dp"
+            android:onClick="goCreateWorkout"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

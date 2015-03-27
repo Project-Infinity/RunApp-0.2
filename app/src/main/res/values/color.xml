@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="black" type="color">#000000</item>
+    <item name="white" type="color">#FFFFFF</item>
+    <item name="piGreen" type="color">#2ecc71</item>
+    <item name="dGrey" type="color">#333333</item>
+    <item name="lGreen" type="color">#C9E5CE</item>
+    <item name="dGreen" type="color">#2fb563</item>
+
+</resources>
